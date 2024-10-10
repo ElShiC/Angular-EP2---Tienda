@@ -1,0 +1,10 @@
+<div class="producto-detalle" *ngIf="product; else notFound">
+  <h1>{{ product.product }}</h1>
+  <p>{{ product.descripcion }}</p>
+  <p>Categoria: {{ product.categoria }}</p>
+  <p>Precio: {{ product.precio }}</p>
+</div>
+
+<ng-template #notFound>
+  <p>Producto no encontrado.</p>
+</ng-template>
